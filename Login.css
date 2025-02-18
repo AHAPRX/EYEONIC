@@ -1,0 +1,51 @@
+body {
+    font-family: Arial, sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background: url('/Images/asdasdsadas.jpg') no-repeat center center fixed;
+    overflow: hidden;
+}
+.container {
+    width: 400px;
+    background: rgba(255, 255, 255, 0.8);
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}   
+.big-box {
+    width: 400px;
+    height: 300px;
+    padding: 20px;
+    background: rgba(255, 255, 255, 0.1);
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+    text-align: center;
+    color: #fff;
+}
+.socialsbtn .fa-brands{
+    padding: 10px;
+    margin: 20px;
+    border: 2px white solid;
+    border-radius: 40px ;
+}
+.socialsbtn .fa-brands:hover{
+    border: none;
+    transform: scale(2);
+}
+.socialsbtn .fa-facebook:hover{
+    color: #316FF6;
+}
+.socialsbtn .fa-instagram:hover{
+    color: #ee2a7b;
+}
+.socialsbtn .fa-discord:hover{
+    color: #5865F2;
+}
+@media (max-width: 730px) {
+    body{
+        background: none;
+    }
+    .big-box{
+        display: none;
+    }
+}

@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>EyeOnic - Login/Signup</title>
+    <link rel="stylesheet" href="../bootstrap-5.3.3-dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="../css/Login.css">
+</head>
+<body style="background-color: black;">
+    <!-- signup ka box jo side me hota -->
+    <div class="big-box" id="extra-box1"></div>
+    <div class="main-container d-flex gap-3">
+        <div class="container p-4 shadow-lg rounded-3 text-center">
+            <!-- heading jisme login or signup likha hota -->
+            <h2 id="form-heading" class="mb-2 text-uppercase"></h2>
+            <!-- description jo login signup me ati -->
+            <p id="form-description" class="mb-4 text-muted"></p>
+            <!-- form login signup dono ka-->
+            <form id="auth-form" class="d-flex flex-column">
+                <input type="text" id="Username" placeholder="Full Name" class="form-control mb-3">
+                <span id="user-error" style="color: red;"></span>
+                <input type="email" id="signup-email" class="form-control mb-3" placeholder="Email" >
+                <span id="email-error" style="color: red;"></span>
+                <input class="form-control mb-3" id="signup-password" type="password" placeholder="Password">
+                <span id="password-error" style="color: red;"></span>
+                <button type="submit" id="btn-text" class="btn btn-primary"></button>
+            </form>
+            <!-- niche jaha dont have a acc likha hota-->
+            <div class="toggle-text mt-3">
+                <span id="toggle-message"></span>
+                <button type="button" id="toggle-link" class="text-primary" style="border: none; background-color: transparent;"></button>
+            </div>
+        </div>
+    <!-- Login ka box jo side me hota -->
+    <div class="big-box" id="extra-box2">
+        <p id="extra-box-text"></p>
+    </div>
+    </div>
+    <script src="../bootstrap-5.3.3-dist/js/bootstrap.min.js"></script>
+    <script src="../Jquery/jquery-3.7.1.min.js"></script>
+    <script src="../JavaScript/login.js"></script>
+</body>
+</html>
